@@ -27,7 +27,7 @@ public class SetReview {
 
     public static Character firstRepeatingChar(String str){
 
-        // Create a hashmap
+        // Create a HashSet
         Set<Character> chars = new HashSet<>();
         // Iteration return ch if add returns false
         for(Character ch : str.toCharArray()) if(!chars.add(ch)) return ch;
