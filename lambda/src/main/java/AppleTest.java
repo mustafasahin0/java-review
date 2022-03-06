@@ -15,6 +15,9 @@ public class AppleTest {
 
         System.out.println(heavyApple);
         System.out.println(greenApple);
+
+        prettyPrintApple(inventory, new AppleColorPrint());
+        prettyPrintApple(inventory, new AppleWeightPrint());
     }
 
     private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate) {
@@ -29,4 +32,12 @@ public class AppleTest {
 
         return result;
     }
+
+    private static void prettyPrintApple(List<Apple> inventory, ApplePrettyPrint applePrettyPrint){
+        for (Apple apple : inventory){
+            String output = applePrettyPrint.print(apple);
+            System.out.println(output);
+        }
+    }
+
 }
