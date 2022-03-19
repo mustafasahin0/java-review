@@ -1,4 +1,4 @@
-package comparator;
+package comparatorInterface;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
